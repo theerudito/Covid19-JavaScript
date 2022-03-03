@@ -1,7 +1,7 @@
 
 const buscar = document.getElementById("buscar");
 const boton = document.getElementById("boton");
-
+const Principal = document.getElementById("principal");
 
 const Image = document.getElementById("imagen")
 const Population = document.getElementById("population") 
@@ -65,35 +65,38 @@ const crearCountry = (country) => {
   const pais =  country.country
 	Country.textContent = `Pais: ${pais}`; 
 
-  const continent =  country.continent
-  Continent.textContent = `Continente: ${continent}`;
+  const continente =  country.continent
+  Paises.textContent = `Continente: ${continente}`;
 
   const populations =  country.population
 	Population.textContent = `Poblacion Total: ${populations}`; 
 
-  const caseConfirm =  country.cases
-	Cases.textContent = `Total Casos Confirmados: ${caseConfirm}`;
+  const cases_confirm =  country.cases
+	Cases.textContent = `Total Casos Confirmados: ${cases_confirm}`;
 
-  const casetoday =  country.todayCases
-	TodayCases.textContent = `Casos Confirmados Hoy: ${casetoday}`;
+  const case_today =  country.todayCases
+	TodayCases.textContent = `Casos Confirmados Hoy: ${case_today}`;
   
-  const active =  country.active
-	Active.textContent = `Casos Activos: ${active}`; 
+  const actives =  country.active
+	Active.textContent = `Casos Activos: ${actives}`; 
 
-  const death =  country.deaths
-  Death.textContent = `Muertes: ${death}`; 
+  const deaths =  country.deaths
+  Death.textContent = `Muertes: ${deaths}`; 
 
-  const todayDeaths =  country.todayDeaths
-	TodayDeaths.textContent = `Muertes de Hoy: ${todayDeaths}`; 
+  const today_Deaths =  country.todayDeaths
+	TodayDeaths.textContent = `Muertes de Hoy: ${today_Deaths}`; 
 
-  const critical =  country.critical
-	Critical.textContent = `Casos Criticos: ${critical }`;
+  const criticals =  country.critical
+	Critical.textContent = `Casos Criticos: ${criticals}`;
 
-  const tests =  country.tests
-	Tests.textContent = `Tests Realizados: ${tests}`;
+  const testing =  country.tests
+	Tests.textContent = `Tests Realizados: ${testing}`;
 
-  const todayRecovered =  country.todayRecovered
-	TodayRecovered.textContent = `Recuperados Hoy: ${todayRecovered}`;
+  const recovery =  country.recovered
+  Recovered.textContent = `Casos Recuperados: ${recovery}`
+ 
+  const today_Recovered =  country.todayRecovered
+	TodayRecovered.textContent = `Recuperados Hoy: ${today_Recovered}`;
 
 };
 
@@ -133,7 +136,7 @@ const obtenerDatos = async () => {
     Critical.textContent = `Casos Criticos: ${casosCriticos}`
 
     const tests =  data.tests
-    Tests.textContent = `Texts Realizados: ${tests}`
+    Tests.textContent = `Tests Realizados: ${tests}`
 
     const recovered =  data.recovered
     Recovered.textContent = `Casos Recuperados: ${recovered}`

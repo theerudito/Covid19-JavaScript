@@ -72,13 +72,13 @@ body {
 }
 
 
-#country, #continent {
+ #country::after,  #continent:after {
   background-color: #8479db;
   align-items: center;
   border-radius: 10px;
   border: 1px solid wheat;
   padding-left: 10px;
-  display: none;
+  
 }
 
 
