@@ -63,7 +63,7 @@ const crearflag = (flag) => {
 
 const crearCountry = (country) => {
   const pais =  country.country
-	Country.textContent = `Pais: ${pais}`; 
+	Active.textContent = `Pais: ${pais}`; 
 
   const continente =  country.continent
   Paises.textContent = `Continente: ${continente}`;
@@ -76,12 +76,9 @@ const crearCountry = (country) => {
 
   const case_today =  country.todayCases
 	TodayCases.textContent = `Casos Confirmados Hoy: ${case_today}`;
-  
-  const actives =  country.active
-	Active.textContent = `Casos Activos: ${actives}`; 
 
   const deaths =  country.deaths
-  Death.textContent = `Muertes: ${deaths}`; 
+  Death.textContent = `Muertes Total: ${deaths}`; 
 
   const today_Deaths =  country.todayDeaths
 	TodayDeaths.textContent = `Muertes de Hoy: ${today_Deaths}`; 
@@ -127,7 +124,7 @@ const obtenerDatos = async () => {
     TodayCases.textContent = `Casos Confirmados Hoy: ${casesToday}`
 
     const death =  data.deaths
-    Death.textContent = `Muertes: ${death}`
+    Death.textContent = `Muertes Total: ${death}`
 
     const deathsToday =  data.todayDeaths
     TodayDeaths.textContent = `Muertes de Hoy: ${deathsToday}`
