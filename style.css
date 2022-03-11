@@ -92,6 +92,10 @@
 	display: none;
 }
 
+#country {
+	width: 120px;
+}
+
 /* @media (min-width: 400px) {
 	body {
 		align-items: center;
