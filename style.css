@@ -48,7 +48,7 @@
 #buscar {
 	display: block;
 	margin: 10px auto;
-	border: none;
+	border: #03bfcb solid 1px;
 }
 
 #boton {
