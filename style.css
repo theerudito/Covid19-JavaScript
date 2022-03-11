@@ -27,6 +27,7 @@
 	text-align: left;
 	padding: 20px;
 	border-radius: 10px;
+	border: #03bfcb solid 1px;
 }
 
 .containter:hover {
@@ -39,6 +40,7 @@
 	text-align: left;
 	padding: 20px;
 	border-radius: 10px;
+	border: #07df12 solid 1px;
 }
 
 #buscar {
